@@ -5,5 +5,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Hello World");
+  //PIEN
+  Serial.println("ぴえん");
 }
