@@ -1,10 +1,14 @@
 #include <Arduino.h>
-//シリアル通信
+#include "BluetoothSerial.h"
+
+BluetoothSerial SerialBT;
+
 void setup() {
-  Serial.begin(115000);
+  SerialBT.begin("ESP32");
 }
 
 void loop() {
-  //PIEN
-  Serial.println("ぴえん");
+
+  SerialBT.println("Hello World");
+  delay(1000);
 }
